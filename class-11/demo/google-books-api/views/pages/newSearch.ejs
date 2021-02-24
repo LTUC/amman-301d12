@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="/books" method="get">
+    <input type="text" name="searchquery" placeholder="enter title or author name">
+
+    <input id="author-radio" type="radio" name="searchby" value="author"> 
+    <label for="author-radio">Search by author</label>
+
+    <input id="title-radio" type="radio" name="searchby" value="title"> 
+    <label for="title-radio">Search by title</label>
+
+    <button type="submit" name="search" id="search">Search</button>
+  </form>
+</body>
+</html>

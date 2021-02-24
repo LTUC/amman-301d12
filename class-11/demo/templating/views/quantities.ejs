@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <h1>My Grocery List</h1>
+    <p><a href="/">Home</a></p>
+    <ul>
+      <% arrayOfItems.forEach(element =>{%>
+        <li>I have <%= element.quantity+' '+element.name %></li>
+      <%}) %>
+    </ul>
+  </body>
+</html>
