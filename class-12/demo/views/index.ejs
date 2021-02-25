@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./head')%>
+<body>
+  <p>All tasks</p>
+  <% tasks.forEach(task=>{%>
+    <ul>
+      <li>Title: <%= task.title %></li>
+      <li>Description: <%= task.description %></li>
+      <li>Contact: <%= task.contact %></li>
+      <li>Status: <%= task.status %></li>
+      <li>Category: <%= task.category %></li>
+      <li><a href="/tasks/<%= task.id%>">show details</a></li>
+    </ul>
+  <%}) %>
+</body>
+</html>

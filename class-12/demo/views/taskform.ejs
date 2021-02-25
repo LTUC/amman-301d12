@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./head')%>
+<body>
+  <form action="/addTask" method="POST">
+    <fieldset>
+      <label for="title">Task Title</label>
+      <input type="text" name="title">
+      <br>
+      <label for="description">Task Description</label>
+      <br>
+      <textarea name="description" cols="30" rows="10"></textarea>
+      <br>
+      <label for="contact">Contact info</label>
+      <input type="text" name="contact">
+      <br>
+      <label for="status">Status</label>
+      <input type="text" name="status">
+      <br>
+      <label for="category">Category</label>
+      <input type="text" name="category">
+      <br>
+      <button type="submit">Add Task</button>
+    </fieldset>
+  </form>
+</body>
+
+</html>
